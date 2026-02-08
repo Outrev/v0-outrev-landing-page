@@ -18,7 +18,6 @@ export default function Page() {
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Success Stories</a>
             <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-            <Button variant="outline" size="sm">Login</Button>
             <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Started</Button>
           </nav>
         </div>
@@ -27,9 +26,9 @@ export default function Page() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight text-balance">
+          <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
             {'Never miss another '}
-            <span className="text-primary">customer call</span>
+            <span className="gradient-text">customer call</span>
             {' or appointment'}
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
@@ -66,7 +65,7 @@ export default function Page() {
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-20 md:py-32">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Everything your shop needs</h2>
+          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Everything your shop needs</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {'Streamline operations and increase revenue with our comprehensive platform'}
           </p>
@@ -171,7 +170,7 @@ export default function Page() {
                 <Star key={i} className="w-6 h-6 fill-primary text-primary" />
               ))}
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Trusted by shop owners nationwide</h2>
+            <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Trusted by shop owners nationwide</h2>
             <p className="text-xl text-muted-foreground">{'See how Outrev is transforming mechanic shops'}</p>
           </div>
 
@@ -224,7 +223,7 @@ export default function Page() {
       <section className="container mx-auto px-4 py-20 md:py-32">
         <Card className="bg-gradient-to-br from-card to-secondary border-border">
           <CardContent className="p-12 md:p-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">
+            <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 text-balance">
               {'Ready to transform your mechanic shop?'}
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">

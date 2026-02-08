@@ -10,6 +10,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(0 0% 98%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 @layer base {
@@ -20,20 +27,20 @@ body {
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 98%;
-    --primary: 142 76% 36%;
+    --primary: 259 100% 36%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
-    --accent: 142 76% 36%;
+    --accent: 259 100% 36%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
     --border: 0 0% 20%;
     --input: 0 0% 20%;
-    --ring: 142 76% 36%;
-    --chart-1: 142 76% 36%;
+    --ring: 259 100% 36%;
+    --chart-1: 259 100% 36%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
