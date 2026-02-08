@@ -21,6 +21,26 @@ body {
   .gradient-bg-blue-slate {
     background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
   }
+  
+  .brushed-metal-bg {
+    background: 
+      repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.03) 2px,
+        rgba(255, 255, 255, 0.03) 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(255, 255, 255, 0.05) 1px,
+        rgba(255, 255, 255, 0.05) 2px
+      ),
+      linear-gradient(180deg, rgba(30, 25, 50, 0.8) 0%, rgba(20, 15, 35, 0.9) 100%);
+    background-color: #1a1220;
+  }
 }
 
 @layer base {
