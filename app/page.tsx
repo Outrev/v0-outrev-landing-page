@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Calendar, MessageSquare, CheckCircle2, Star, TrendingUp, Users, Zap } from "lucide-react"
+import { Phone, Calendar, MessageSquare, Globe, Star } from "lucide-react"
 
 export default function Page() {
   return (
@@ -65,13 +65,13 @@ export default function Page() {
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-20 md:py-32">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Everything your shop needs</h2>
+          <h2 className="text-4xl md:text-5xl font-thin gradient-text mb-4">Everything your shop needs</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {'Streamline operations and increase revenue with our comprehensive platform'}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8">
           {[
             {
               icon: Phone,
@@ -84,80 +84,21 @@ export default function Page() {
               description: "Customers book appointments instantly through your website, phone, or text. Syncs seamlessly with your shop calendar."
             },
             {
-              icon: MessageSquare,
-              title: "Customer Communication",
-              description: "Automated text and email updates keep customers informed about their vehicle status, estimates, and pickup times."
+              icon: Globe,
+              title: "Optimize Website & SEO",
+              description: "Boost your online visibility with AI-optimized website content and SEO recommendations tailored for auto repair shops."
             }
           ].map((feature, i) => (
-            <Card key={i} className="bg-card border-border hover:border-primary/50 transition-colors">
+            <Card key={i} className="gradient-bg-blue-slate border-none">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                <p className="text-white/80 leading-relaxed">{feature.description}</p>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Additional Features Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="bg-card border-border">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <TrendingUp className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">Real-Time Analytics</h3>
-                  <p className="text-muted-foreground">Track call volume, booking rates, and customer satisfaction in one intuitive dashboard.</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card border-border">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Users className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">Customer Database</h3>
-                  <p className="text-muted-foreground">Build lasting relationships with automated follow-ups and service reminders.</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card border-border">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Zap className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">Seamless Integration</h3>
-                  <p className="text-muted-foreground">Connects with your existing shop management software and POS systems.</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card border-border">
-            <CardContent className="p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-2">Review Management</h3>
-                  <p className="text-muted-foreground">Automatically request and manage reviews to build your online reputation.</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
@@ -179,23 +120,17 @@ export default function Page() {
               {
                 quote: "Outrev increased our bookings by 45% in the first month. The AI answers calls even when we're swamped, and customers love the instant scheduling.",
                 author: "Mike Rodriguez",
-                shop: "Rodriguez Auto Repair",
-                metric: "+$32,000/month",
-                metricLabel: "Revenue increase"
+                shop: "Rodriguez Auto Repair"
               },
               {
                 quote: "We were missing 30% of calls before Outrev. Now we capture every opportunity. The ROI was clear within two weeks.",
                 author: "Sarah Chen",
-                shop: "Precision Auto Service",
-                metric: "98%",
-                metricLabel: "Call answer rate"
+                shop: "Precision Auto Service"
               },
               {
                 quote: "The automated follow-ups and reminders brought back customers we hadn't seen in years. It's like having a full-time customer service team.",
                 author: "James Walker",
-                shop: "Walker's Garage",
-                metric: "+$18,500/month",
-                metricLabel: "From repeat customers"
+                shop: "Walker's Garage"
               }
             ].map((testimonial, i) => (
               <Card key={i} className="bg-card border-border">
@@ -208,9 +143,7 @@ export default function Page() {
                   <p className="text-foreground mb-6 leading-relaxed">"{testimonial.quote}"</p>
                   <div className="border-t border-border pt-4">
                     <div className="font-bold text-foreground">{testimonial.author}</div>
-                    <div className="text-sm text-muted-foreground mb-3">{testimonial.shop}</div>
-                    <div className="text-2xl font-bold text-primary">{testimonial.metric}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.metricLabel}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.shop}</div>
                   </div>
                 </CardContent>
               </Card>
