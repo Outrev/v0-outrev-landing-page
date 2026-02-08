@@ -24,9 +24,8 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="brushed-metal-bg -mx-4 px-4 py-20 md:py-32">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto text-center">
+      <section className="container mx-auto px-4 py-20 md:py-32">
+        <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
             {'Never miss another '}
             <span className="gradient-text">customer call</span>
@@ -43,7 +42,6 @@ export default function Page() {
               See How It Works
             </Button>
           </div>
-        </div>
         </div>
       </section>
 
