@@ -24,8 +24,9 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="brushed-metal-bg -mx-4 px-4 py-20 md:py-32">
-        <div className="container mx-auto">
+      <section className="brushed-metal-bg relative overflow-hidden -mx-4 px-4 py-20 md:py-32">
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background/80"></div>
+        <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
             {'Never miss another '}
