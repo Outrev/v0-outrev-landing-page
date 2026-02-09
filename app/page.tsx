@@ -24,10 +24,7 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/diamond-plate-bg.jpg')] bg-cover bg-center opacity-20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
             {'Never miss another '}
@@ -45,7 +42,6 @@ export default function Page() {
               See How It Works
             </Button>
           </div>
-        </div>
         </div>
       </section>
 
