@@ -150,7 +150,7 @@ export default function Page() {
                 <CardContent className="p-8">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, j) => (
-                      <Star key={j} className="w-4 h-4 fill-primary text-primary" />
+                      <Star key={j} className="w-4 h-4 fill-primary text-transparent gradient-star" />
                     ))}
                   </div>
                   <p className="text-foreground mb-6 leading-relaxed">"{testimonial.quote}"</p>
@@ -167,23 +167,23 @@ export default function Page() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20 md:py-32">
-        <Card className="bg-gradient-to-br from-card to-secondary border-border">
+        <Card className="border-none bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-2xl">
           <CardContent className="p-12 md:p-16 text-center">
-            <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-6 text-balance">
+            <h2 className="text-4xl md:text-5xl font-thin text-white mb-6 text-balance">
               {'Ready to transform your mechanic shop?'}
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
               {'Join thousands of shops already using Outrev to increase revenue and improve customer satisfaction.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
+              <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold text-lg px-8 py-6 shadow-lg">
                 Schedule Your Free Demo
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-muted-foreground/30 hover:bg-muted bg-transparent">
+              <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-bold text-lg px-8 py-6 border-2 border-white/40 backdrop-blur">
                 Call (877) 555-0123
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground mt-6">{'No credit card required • Setup in under 24 hours'}</p>
+            <p className="text-sm text-white/80 mt-6">{'No credit card required • Setup in under 24 hours'}</p>
           </CardContent>
         </Card>
       </section>
