@@ -79,7 +79,7 @@ export default function Page() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-thin gradient-text mb-4">Tools that handle the office, so you can focus on the bays.</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {'Streamline operations and increase revenue with our comprehensive platform'}
+            {'Fill your bays, capture every call, and grow your shop—without extra staff. Our AI works behind the scenes so you can focus on what you do best.'}
           </p>
         </div>
 
@@ -123,8 +123,8 @@ export default function Page() {
                 <Star key={i} className="w-6 h-6 fill-yellow-400 text-transparent gradient-star-gold" />
               ))}
             </div>
-            <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Trusted by shop owners nationwide</h2>
-            <p className="text-xl text-muted-foreground">{'See how Outrev is transforming mechanic shops'}</p>
+            <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Mechanics Who Revved Up Their Business</h2>
+            <p className="text-xl text-muted-foreground">{'See how independent mechanics are filling bays, capturing more calls, and growing their business with Outrev.'}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -169,10 +169,10 @@ export default function Page() {
         <Card className="border-none bg-gradient-to-b from-primary to-secondary shadow-2xl">
           <CardContent className="p-12 md:p-16 text-center">
             <h2 className="text-4xl md:text-5xl font-thin text-white mb-6 text-balance">
-              {'Ready to transform your mechanic shop?'}
+              {'Start growing your shop with AI today'}
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-              {'Join thousands of shops already using Outrev to increase revenue and improve customer satisfaction.'}
+              {'Get started with Outrev today and start capturing calls, booking jobs, and growing your shop immediately.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white hover:bg-white/90 text-primary font-bold text-lg px-8 py-6 shadow-lg">
