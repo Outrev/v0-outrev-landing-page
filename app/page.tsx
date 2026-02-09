@@ -24,23 +24,36 @@ export default function Page() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
-            {'Never miss another '}
-            <span className="gradient-text">customer call</span>
-            {' or appointment'}
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            {'AI-powered communication platform built for mechanic shops. Handle bookings, answer calls, and engage customers 24/7—all automated.'}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
-              Get a Free Demo
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-muted-foreground/30 hover:bg-muted bg-transparent">
-              See How It Works
-            </Button>
+      <section 
+        className="relative px-4 py-20 md:py-32 overflow-hidden"
+        style={{
+          backgroundImage: "url('/mechanic-shop-bg.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/85 to-background/70" />
+        
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
+              {'Never miss another '}
+              <span className="gradient-text">customer call</span>
+              {' or appointment'}
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              {'AI-powered communication platform built for mechanic shops. Handle bookings, answer calls, and engage customers 24/7—all automated.'}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
+                Get a Free Demo
+              </Button>
+              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-muted-foreground/30 hover:bg-muted bg-transparent">
+                See How It Works
+              </Button>
+            </div>
           </div>
         </div>
       </section>
