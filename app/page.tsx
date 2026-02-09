@@ -121,7 +121,7 @@ export default function Page() {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-primary text-primary" />
+                <Star key={i} className="w-6 h-6 fill-yellow-400 text-transparent gradient-star-gold" />
               ))}
             </div>
             <h2 className="text-4xl md:text-5xl font-thin text-foreground mb-4">Trusted by shop owners nationwide</h2>
@@ -146,7 +146,7 @@ export default function Page() {
                 shop: "Walker's Garage"
               }
             ].map((testimonial, i) => (
-              <Card key={i} className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30">
+              <Card key={i} className="bg-gradient-to-br from-primary/40 to-primary/20 border-primary/40">
                 <CardContent className="p-8">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, j) => (
