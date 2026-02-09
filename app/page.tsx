@@ -39,12 +39,11 @@ export default function Page() {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-thin text-foreground mb-6 leading-tight text-balance">
-              {'Never miss another '}
-              <span className="gradient-text">customer call</span>
-              {' or appointment'}
+              Your next customer is calling. 
+              <span className="gradient-text"> Don't miss it.</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              {'AI-powered communication platform built for mechanic shops. Handle bookings, answer calls, and engage customers 24/7—all automated.'}
+              {'AI made easy for your mechanic shop - streamlining communication, optimizing visibility, and bringing customers to you, so you can focus on what you do best.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6">
@@ -78,7 +77,7 @@ export default function Page() {
       {/* Features Section */}
       <section id="features" className="container mx-auto px-4 py-20 md:py-32">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-thin gradient-text mb-4">Everything your shop needs</h2>
+          <h2 className="text-4xl md:text-5xl font-thin gradient-text mb-4">Tools that handle the office, so you can focus on the bays.</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {'Streamline operations and increase revenue with our comprehensive platform'}
           </p>
@@ -89,7 +88,7 @@ export default function Page() {
             {
               icon: Phone,
               title: "AI Voice Answering",
-              description: "Never miss a call again. Our AI answers customer inquiries, schedules appointments, and provides quotes—day or night."
+              description: "Our AI answers calls 24/7, captures customer details, and books appointments for you— so no opportunity is lost when you're busy in the bay or closed for the day."
             },
             {
               icon: Calendar,
@@ -99,7 +98,7 @@ export default function Page() {
             {
               icon: Globe,
               title: "Optimize Website & SEO",
-              description: "Boost your online visibility with AI-optimized website content and SEO recommendations tailored for auto repair shops."
+              description: "We optimize your website and Google presence so your shop ranks higher, loads faster, and turns searches into real customers—not just clicks."
             }
           ].map((feature, i) => (
             <Card key={i} className="gradient-bg-blue-slate border-none">
