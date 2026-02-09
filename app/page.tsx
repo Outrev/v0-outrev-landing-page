@@ -69,7 +69,7 @@ export default function Page() {
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-foreground mb-2">{stat.value}</div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-base md:text-lg gradient-text font-semibold">{stat.label}</div>
             </div>
           ))}
         </div>
@@ -167,7 +167,7 @@ export default function Page() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20 md:py-32">
-        <Card className="border-none bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-2xl">
+        <Card className="border-none bg-gradient-to-b from-primary to-secondary shadow-2xl">
           <CardContent className="p-12 md:p-16 text-center">
             <h2 className="text-4xl md:text-5xl font-thin text-white mb-6 text-balance">
               {'Ready to transform your mechanic shop?'}
