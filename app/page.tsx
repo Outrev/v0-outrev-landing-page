@@ -146,7 +146,7 @@ export default function Page() {
                 shop: "Walker's Garage"
               }
             ].map((testimonial, i) => (
-              <Card key={i} className="bg-gradient-to-br from-card to-secondary/30 border-border">
+              <Card key={i} className="bg-gradient-to-br from-primary/20 to-primary/5 border-primary/30">
                 <CardContent className="p-8">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, j) => (
