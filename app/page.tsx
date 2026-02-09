@@ -146,11 +146,11 @@ export default function Page() {
                 shop: "Walker's Garage"
               }
             ].map((testimonial, i) => (
-              <Card key={i} className="bg-card border-border">
+              <Card key={i} className="bg-gradient-to-br from-card to-secondary/30 border-border">
                 <CardContent className="p-8">
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, j) => (
-                      <Star key={j} className="w-4 h-4 fill-primary text-transparent gradient-star" />
+                      <Star key={j} className="w-4 h-4 fill-yellow-400 text-transparent gradient-star-gold" />
                     ))}
                   </div>
                   <p className="text-foreground mb-6 leading-relaxed">"{testimonial.quote}"</p>
