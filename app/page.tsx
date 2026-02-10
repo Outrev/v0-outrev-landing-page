@@ -17,8 +17,7 @@ export default function Page() {
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
             <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Success Stories</a>
-            <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">Get Started</Button>
+            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground"><a href="#cta" className="text-primary-foreground">Free Demo</a></Button>
           </nav>
         </div>
       </header>
@@ -165,7 +164,7 @@ export default function Page() {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-4 py-20 md:py-32">
+      <section id="cta" className="container mx-auto px-4 py-20 md:py-32">
         <Card className="border-none bg-gradient-to-b from-primary to-secondary shadow-2xl">
           <CardContent className="p-12 md:p-16 text-center">
             <h2 className="text-4xl md:text-5xl font-thin text-white mb-6 text-balance">
@@ -182,7 +181,7 @@ export default function Page() {
                 Call (877) 555-0123
               </Button>
             </div>
-            <p className="text-sm text-white/80 mt-6">{'No credit card required • Setup in under 24 hours'}</p>
+            <p className="text-sm text-white/80 mt-6">{'No contracts. No pressure. Just a test drive.'}</p>
           </CardContent>
         </Card>
       </section>
