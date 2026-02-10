@@ -190,7 +190,7 @@ export default function Page() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-12 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
@@ -203,27 +203,20 @@ export default function Page() {
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-foreground mb-4">Product</h3>
+              <h3 className="font-bold text-foreground mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Case Studies</a></li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Back to Top</a></li>
+                <li><a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a></li>
+                <li><a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Success Stories</a></li>
+                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Schedule Demo</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold text-foreground mb-4">Company</h3>
+              <h3 className="font-bold text-foreground mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-foreground mb-4">Support</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Help Center</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">API Docs</a></li>
-                <li><a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a></li>
+                <li className="text-sm text-muted-foreground">Phone: <a href="tel:+18775550123" className="hover:text-foreground transition-colors">(877) 555-0123</a></li>
+                <li className="text-sm text-muted-foreground">Email: <a href="mailto:info@outrev.com" className="hover:text-foreground transition-colors">info@outrev.com</a></li>
+                <li className="text-sm text-muted-foreground">Website: <a href="https://outrev.com" className="hover:text-foreground transition-colors">outrev.com</a></li>
               </ul>
             </div>
           </div>
