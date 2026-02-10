@@ -1,18 +1,32 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Calendar, MessageSquare, Globe, Star } from "lucide-react"
+import { useState, useEffect } from "react"
 
 export default function Page() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+      <header className={`fixed top-0 left-0 right-0 z-50 border-b border-border transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur py-2 shadow-lg' : 'bg-background py-4'}`}>
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className={`flex items-center gap-2 transition-all duration-300 ${isScrolled ? 'scale-90' : 'scale-100'}`}>
             <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">O</span>
             </div>
-            <span className="text-xl font-bold text-foreground">Outrev</span>
+            <span className={`font-bold text-foreground transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-xl'}`}>Outrev</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
@@ -24,7 +38,7 @@ export default function Page() {
 
       {/* Hero Section */}
       <section 
-        className="relative px-4 py-20 md:py-32 overflow-hidden"
+        className="relative px-4 py-20 md:py-32 overflow-hidden pt-24 md:pt-32"
         style={{
           backgroundImage: "url('/mechanic-shop-bg.jpg')",
           backgroundSize: 'cover',
