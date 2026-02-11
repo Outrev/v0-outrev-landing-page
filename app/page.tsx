@@ -23,7 +23,7 @@ export default function Page() {
       <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'bg-background/50 backdrop-blur-lg border-border/50 py-2 shadow-lg' : 'border-border bg-background py-4'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           <a href="#" className={`flex items-center transition-all duration-300 ${isScrolled ? 'scale-75' : 'scale-100'}`}>
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-12 w-auto" />
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-10 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
@@ -189,7 +189,7 @@ export default function Page() {
                 Schedule Your Free Demo
               </Button>
               <Button size="lg" className="bg-white/20 hover:bg-white/30 text-white font-bold text-lg px-8 py-6 border-2 border-white/40 backdrop-blur">
-                Call (877) 555-0123
+                Call 1-888-221-6878
               </Button>
             </div>
             <p className="text-sm text-white/80 mt-6">{'No contracts. No pressure. Just a test drive.'}</p>
@@ -203,7 +203,7 @@ export default function Page() {
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             <div>
               <div className="mb-4">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-10 w-auto" />
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-12 w-auto" />
               </div>
               <p className="text-sm text-muted-foreground">
                 {'AI-powered communication for the modern mechanic shop.'}
@@ -221,7 +221,7 @@ export default function Page() {
             <div>
               <h3 className="font-bold text-foreground mb-4">Contact</h3>
               <ul className="space-y-2">
-                <li className="text-sm text-muted-foreground">Phone: <a href="tel:+18775550123" className="hover:text-foreground transition-colors">(877) 555-0123</a></li>
+                <li className="text-sm text-muted-foreground">Phone: <a href="tel:+18882216878" className="hover:text-foreground transition-colors">1-888-221-6878</a></li>
                 <li className="text-sm text-muted-foreground">Email: <a href="mailto:info@outrev.com" className="hover:text-foreground transition-colors">info@outrev.com</a></li>
                 <li className="text-sm text-muted-foreground">Website: <a href="https://outrev.com" className="hover:text-foreground transition-colors">outrev.com</a></li>
               </ul>
