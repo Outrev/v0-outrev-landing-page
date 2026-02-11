@@ -23,7 +23,7 @@ export default function Page() {
       <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${isScrolled ? 'bg-background/50 backdrop-blur-lg border-border/50 py-2 shadow-lg' : 'border-border bg-background py-4'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           <a href="#" className={`flex items-center transition-all duration-300 ${isScrolled ? 'scale-75' : 'scale-100'}`}>
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-10 w-auto" />
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white%20big-GFj6iVPBmpT3EzlKgSxGeKZZlj5Pr2.png" alt="Outrev Logo" className="h-10 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-6">
             <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
@@ -203,7 +203,7 @@ export default function Page() {
           <div className="grid md:grid-cols-3 gap-12 mb-8">
             <div>
               <div className="mb-4">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white-Xr3UIVmACsNw77hENmZbPLImBQeTxS.png" alt="Outrev Logo" className="h-12 w-auto" />
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/outrev%20logo%20complete%20white%20big-GFj6iVPBmpT3EzlKgSxGeKZZlj5Pr2.png" alt="Outrev Logo" className="h-12 w-auto" />
               </div>
               <p className="text-sm text-muted-foreground">
                 {'AI-powered communication for the modern mechanic shop.'}
